@@ -45,7 +45,7 @@ table {
 body {
     box-sizing: border-box;
 	background-color:rgb(51, 38, 38);
-	margin: 0 50px;
+	margin: 0 100px;
 }
 div.container {
     width: 100%;
@@ -54,11 +54,6 @@ div.container {
     grid-template-rows: 2fr 8fr;
     grid-template-columns: 1.5fr 6fr;
     background-color: whitesmoke;
-}
-div.sidebar {
-	background-color: lightskyblue;
-	grid-row: 1 / 3;
-	grid-column: 1
 }
 header {
 	background-color: white;
@@ -71,8 +66,16 @@ header {
 }
 div.main-container {
 	background-color: gray;
-
+	display: grid;
+	grid-template-rows: 3fr 2.5fr;
+	grid-template-columns: 2fr 1fr;
+	gap: 20px;
+	padding: 20px;
+	padding-bottom: 60px;
 }
+
+
+
 div.buttons {
 	display: flex;
 	justify-content: center;
@@ -89,7 +92,7 @@ div.greeting {
 }
 
 div.greeting>p{
-	font-size: 1rem;
+	font-size: 1.25rem;
 	grid-column: 2/3;
 	grid-row: 1;
 	align-self: self-end;
@@ -136,7 +139,8 @@ button {
 	border-style: none;
 	font-weight: bold;
 	color: white;
-	background-color: rgb(98, 112, 240)
+	background-color: rgb(98, 112, 240);
+	font-size: 1.2rem;
 }
 div.profile {
 	display: flex;
@@ -145,11 +149,98 @@ div.profile {
 	gap: 10px;
 	font-weight: bold;
 	font-size: 1.5rem;
-	padding-top: 5px;
+	padding-top: 20px;
 }
 div.profile>img.profile {
 	height: 35px;
 }
+div.sidebar {
+	background-color: lightskyblue;
+	grid-row: 1 / 3;
+	grid-column: 1;
+	display: grid;
+	grid-template-rows: 1fr 5fr 5fr;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	justify-items: center;
+}
+div.logo>img {
+	height: 100px;
+	width: auto;
+}
+div.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	gap: 20px;
+}
 
+div.menus {
+	padding-top: 80px;
+	height: 20%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: repeat(9, 1fr);
+	font-size: 1.25rem;
+	font-weight: bold;
+	gap: 20px;
+}
+div.proj-container {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+}
+div.trending-container {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	background-color: lightblue;
+}
+div.projects {
+	background-color: grey;
+	grid-column: 1/2;
+	grid-row: 1/3;
+}
+div.announce-container {
+	background-color: green;
+}
+div.announcements {
+	height: 100%;
+	width: 100%;
+}
+div.trend-item {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-template-rows: 1fr 1fr;
+	padding: 20px;
+}
+div.trend-item>img{
+	grid-row: 1/3;
+	grid-column: 1/2;
+}
+div.item {
+	background-color: white;
 
+}
+div.menus>p{
+	padding-left: 30px;
+}
+p.settings-row, img.settings-row {
+	padding-top: 60px;
+}
+
+.main-container h1 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.proj-container h1 {
+	font-size: 1.1rem;
+}
 
